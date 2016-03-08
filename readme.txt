@@ -1,5 +1,5 @@
 === GP Project Contributors ===
-Contributors: gregross
+Contributors: GregRoss
 Donate link: http://toolstack.com/donate
 Plugin URI: http://glot-o-matic.com/gp-project-contributors
 Author URI: http://toolstack.com
@@ -14,7 +14,7 @@ A plugin for GlotPress as a WordPress plugin that creates a formated list of con
 
 == Description ==
 
-A plugin for [GlotPress as a WordPress plugin](https://github.com/deliciousbrains/GlotPress) that creates a formated list of contributors to a GlotPress project as a shortcode.
+A plugin for [GlotPress as a WordPress plugin](https://github.com/GlotPress/GlotPress-WP) that creates a formated list of contributors to a GlotPress project as a shortcode.
 
 == Installation ==
 
