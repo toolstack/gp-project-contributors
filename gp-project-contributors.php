@@ -3,8 +3,8 @@
 Plugin Name: GP Project Contributors
 Plugin URI: http://glot-o-matic.com/gp-project-contributors
 Description: Create a dynamic list of contirbutors to your GlotPress project with a WordPress shortcode.
-Version: 0.5
-Author: GregRoss
+Version: 1.0
+Author: Greg Ross
 Author URI: http://toolstack.com
 Tags: glotpress, glotpress plugin
 License: GPLv2 or later
