@@ -160,7 +160,7 @@ FROM {$gp_table_prefix}translations
 INNER JOIN {$gp_table_prefix}translation_sets ON {$gp_table_prefix}translations.translation_set_id = {$gp_table_prefix}translation_sets.id
 INNER JOIN `{$wpdb->users}` on `{$gp_table_prefix}translations`.`user_id` = `{$wpdb->users}`.`ID`
 INNER JOIN {$gp_table_prefix}originals ON {$gp_table_prefix}translations.original_id = {$gp_table_prefix}originals.id
-WHERE `{$gp_table_prefix}originals`.`project_id` = 3
+WHERE `{$gp_table_prefix}originals`.`project_id` = {$project_id}
 AND `{$gp_table_prefix}originals`.`status` = '+active'
 GROUP BY {$wpdb->users}.user_login, {$gp_table_prefix}translation_sets.id" );
 		
