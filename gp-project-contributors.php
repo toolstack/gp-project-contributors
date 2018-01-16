@@ -179,11 +179,11 @@ GROUP BY {$wpdb->users}.user_login, {$gp_table_prefix}translation_sets.id" );
 			$contribs->rejected = $row->rejected_contrib;
 			
 			$contribs->total = $row->total_contrib;
-			$contribs->tooltip = __("Current") . ": " . number_format_i18n($contribs->current, 0) . "\r\n" .
-				__("Fuzzy") . ": " . number_format_i18n($contribs->fuzzy, 0) . "\r\n" .
-				__("Waiting") . ": " . number_format_i18n($contribs->waiting, 0) . "\r\n" .
-				__("Old") . ": " . number_format_i18n($contribs->old, 0) . "\r\n" .
-				__("Rejected") . ": " . number_format_i18n($contribs->rejected, 0);
+			$contribs->tooltip = __( 'Current', 'gp-project-contributors' ) . ": " . number_format_i18n($contribs->current, 0) . "\r\n" .
+				__( 'Fuzzy', 'gp-project-contributors' ) . ": " . number_format_i18n($contribs->fuzzy, 0) . "\r\n" .
+				__( 'Waiting', 'gp-project-contributors' ) . ": " . number_format_i18n($contribs->waiting, 0) . "\r\n" .
+				__( 'Old', 'gp-project-contributors' ) . ": " . number_format_i18n($contribs->old, 0) . "\r\n" .
+				__( 'Rejected', 'gp-project-contributors' ) . ": " . number_format_i18n($contribs->rejected, 0);
 			
 			$languageContributions[$row->display_name][$current->english_name] = $contribs;
 			
