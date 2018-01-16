@@ -164,8 +164,6 @@ WHERE `{$gp_table_prefix}originals`.`project_id` = {$project_id}
 AND `{$gp_table_prefix}originals`.`status` = '+active'
 GROUP BY {$wpdb->users}.user_login, {$gp_table_prefix}translation_sets.id" );
 		
-		// $return .= '<pre>' . print_r( $result, true ) . '</pre>';
-
 		// Loop through all the results from the database and create a list of locales with all their approvers associated with them.
 		foreach( $result as $row ) {
 			$current = $gpl->locales[$row->locale];
@@ -181,11 +179,11 @@ GROUP BY {$wpdb->users}.user_login, {$gp_table_prefix}translation_sets.id" );
 			$contribs->rejected = $row->rejected_contrib;
 			
 			$contribs->total = $row->total_contrib;
-			$contribs->tooltip = "Current: " . number_format_i18n($contribs->current, 0) . "\r\n" .
-				"Fuzzy: " . number_format_i18n($contribs->fuzzy, 0) . "\r\n" .
-				"Waiting: " . number_format_i18n($contribs->waiting, 0) . "\r\n" .
-				"Old: " . number_format_i18n($contribs->old, 0) . "\r\n" .
-				"Rejected: " . number_format_i18n($contribs->rejected, 0);
+			$contribs->tooltip = __("Current") . ": " . number_format_i18n($contribs->current, 0) . "\r\n" .
+				__("Fuzzy") . ": " . number_format_i18n($contribs->fuzzy, 0) . "\r\n" .
+				__("Waiting") . ": " . number_format_i18n($contribs->waiting, 0) . "\r\n" .
+				__("Old") . ": " . number_format_i18n($contribs->old, 0) . "\r\n" .
+				__("Rejected") . ": " . number_format_i18n($contribs->rejected, 0);
 			
 			$languageContributions[$row->display_name][$current->english_name] = $contribs;
 			
