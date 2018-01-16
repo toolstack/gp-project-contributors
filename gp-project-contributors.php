@@ -105,7 +105,7 @@ class GP_Project_Contributors {
 			}
 
 			// Create the return string.
-			$return .= "<tr><td style=\"text-align: right; border: 0px; background: transparent; white-space: nowrap;\">" . htmlentities( $key, ENT_QUOTES ) . ":</td><td style=\"border: 0px; background: transparent; padding-left:5px;\">" . implode( ', ', $values ) . "</td></tr>" . PHP_EOL;
+			$return .= '<tr><td style="text-align: right; border: 0px; background: transparent; white-space: nowrap;">' . htmlentities( $key, ENT_QUOTES ) . ':</td><td style="border: 0px; background: transparent; padding-left:5px;">' . implode( ', ', $values ) . '</td></tr>' . PHP_EOL;
 		}
 
 		$return .= '</table>';
@@ -143,8 +143,9 @@ class GP_Project_Contributors {
 
 		// Setup some variables to use later.
 		$return = '<style type="text/css">.gptl-twitter, .gptl-twitter:focus, .gptl-twitter:hover, .gptl-twitter:link, .gptl-twitter:visited, .gptl-twitter:active { color: #55acee; } .gptl-facebook, .gptl-facebook:focus, .gptl-facebook:hover, .gptl-facebook:link, .gptl-facebook:visited, .gptl-facebook:active { color: #3A5795; }</style><table style="border: 0px;">';
+
 		$names = array();
-        	$links = array();
+		$links = array();
 		$languageContributions = array();
 
 		// Grab all of the contributors from the GlotPress translations table and join it to the WordPress users table so we can get display names later.
@@ -179,11 +180,11 @@ GROUP BY {$wpdb->users}.user_login, {$gp_table_prefix}translation_sets.id" );
 			$contribs->rejected = $row->rejected_contrib;
 
 			$contribs->total = $row->total_contrib;
-			$contribs->tooltip = __( 'Current', 'gp-project-contributors' ) . ": " . number_format_i18n($contribs->current, 0) . PHP_EOL .
-				__( 'Fuzzy', 'gp-project-contributors' ) . ": " . number_format_i18n($contribs->fuzzy, 0) . PHP_EOL .
-				__( 'Waiting', 'gp-project-contributors' ) . ": " . number_format_i18n($contribs->waiting, 0) . PHP_EOL .
-				__( 'Old', 'gp-project-contributors' ) . ": " . number_format_i18n($contribs->old, 0) . PHP_EOL .
-				__( 'Rejected', 'gp-project-contributors' ) . ": " . number_format_i18n($contribs->rejected, 0);
+			$contribs->tooltip = __( 'Current', 'gp-project-contributors' ) . ': ' . number_format_i18n( $contribs->current, 0 ) . PHP_EOL .
+				__( 'Fuzzy', 'gp-project-contributors' ) . ': ' . number_format_i18n( $contribs->fuzzy, 0 ) . PHP_EOL .
+				__( 'Waiting', 'gp-project-contributors' ) . ': ' . number_format_i18n( $contribs->waiting, 0 ) . PHP_EOL .
+				__( 'Old', 'gp-project-contributors' ) . ': ' . number_format_i18n( $contribs->old, 0 ) . PHP_EOL .
+				__( 'Rejected', 'gp-project-contributors' ) . ': ' . number_format_i18n( $contribs->rejected, 0 );
 
 			$languageContributions[$row->display_name][$current->english_name] = $contribs;
 
@@ -229,7 +230,7 @@ GROUP BY {$wpdb->users}.user_login, {$gp_table_prefix}translation_sets.id" );
 			}
 
 			// Create the return string.
-			$return .= "<tr><td style=\"text-align: right; border: 0px; background: transparent; white-space: nowrap;\">" . htmlentities( $key, ENT_QUOTES ) . ":</td><td style=\"border: 0px; background: transparent; padding-left:5px;\">" . implode( ', ', $values ) . "</td></tr>" . PHP_EOL;
+			$return .= '<tr><td style="text-align: right; border: 0px; background: transparent; white-space: nowrap;">' . htmlentities( $key, ENT_QUOTES ) . ':</td><td style="border: 0px; background: transparent; padding-left:5px;">' . implode( ', ', $values ) . '</td></tr>' . PHP_EOL;
 		}
 
 		$return .= '</table>';
