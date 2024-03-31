@@ -1,20 +1,20 @@
-=== GP Project Contributors ===
-Contributors: GregRoss
-Donate link: http://toolstack.com/donate
-Plugin URI: http://glot-o-matic.com/gp-project-contributors
-Author URI: http://toolstack.com
-Tags: translation, glotpress
-Requires at least: 4.4
-Tested up to: 6.4
-Stable tag: 1.0
-License: GPLv2
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+# GP Project Contributors #
+**Contributors:** [gregross](https://profiles.wordpress.org/gregross/)  
+**Donate link:** http://toolstack.com/donate  
+**Plugin URI:** http://glot-o-matic.com/gp-project-contributors  
+**Author URI:** http://toolstack.com  
+**Tags:** translation, glotpress  
+**Requires at least:** 4.4  
+**Tested up to:** 6.4  
+**Stable tag:** 1.0  
+**License:** GPLv2  
+**License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
-A plugin for GlotPress as a WordPress plugin that creates a formated list of contributors to a GlotPress project as a shortcode.
+A plugin for GlotPress as a WordPress plugin that creates a formatted list of contributors to a GlotPress project as a shortcode.
 
-== Description ==
+## Description ##
 
-A plugin for [GlotPress as a WordPress plugin](https://github.com/GlotPress/GlotPress-WP) that creates a formated list of contributors to a GlotPress project as a shortcode.
+A plugin for [GlotPress as a WordPress plugin](https://github.com/GlotPress/GlotPress-WP) that creates a formatted list of contributors to a GlotPress project as a shortcode.
 
 There are two shortcodes available:
 * gp-project-contributors - creates a table of contributors per locale.
@@ -31,17 +31,17 @@ For example, if you have a project with a slug of 'glotpress', then the followin
 
 	[gp-project-contributors slug=glotpress]
 
-== Installation ==
+## Installation ##
 
 Install from the WordPress plugin directory.
 
-== Frequently Asked Questions ==
+## Frequently Asked Questions ##
 
-= TBD =
+### TBD ###
 
 TBD
 
-== Changelog ==
+## Changelog ##
 ## 1.1
 * Release date: March 31, 2024
 * Added gp-project-contributors-translators shortcode, thanks [Chris Gårdenberg](https://github.com/itssimple)
