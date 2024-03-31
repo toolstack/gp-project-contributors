@@ -5,8 +5,8 @@ Plugin URI: http://glot-o-matic.com/gp-project-contributors
 Author URI: http://toolstack.com
 Tags: translation, glotpress
 Requires at least: 4.4
-Tested up to: {{WP-VERSION}}
-Stable tag: {{TAG}}
+Tested up to: 6.4
+Stable tag: 1.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,3 +42,14 @@ Install from the WordPress plugin directory.
 TBD
 
 == Changelog ==
+## 1.1
+* Release date: March 31, 2024
+* Added gp-project-contributors-translators shortcode, thanks [Chris Gårdenberg](https://github.com/itssimple)
+
+## 1.0
+* Release date: March 18, 2016
+* Documentation updates and official release.
+
+## 0.5
+* Release date: December 31, 2015
+* Initial release.
