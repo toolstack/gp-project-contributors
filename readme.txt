@@ -10,11 +10,11 @@ Stable tag: 1.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A plugin for GlotPress as a WordPress plugin that creates a formated list of contributors to a GlotPress project as a shortcode.
+A plugin for GlotPress as a WordPress plugin that creates a formatted list of contributors to a GlotPress project as a shortcode.
 
 == Description ==
 
-A plugin for [GlotPress as a WordPress plugin](https://github.com/GlotPress/GlotPress-WP) that creates a formated list of contributors to a GlotPress project as a shortcode.
+A plugin for [GlotPress as a WordPress plugin](https://github.com/GlotPress/GlotPress-WP) that creates a formatted list of contributors to a GlotPress project as a shortcode.
 
 There are two shortcodes available:
 * gp-project-contributors - creates a table of contributors per locale.
