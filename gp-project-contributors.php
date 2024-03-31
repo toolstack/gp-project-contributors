@@ -187,7 +187,6 @@ GROUP BY {$wpdb->users}.user_login, {$gp_table_prefix}translation_sets.id" );
 				__( 'Rejected', 'gp-project-contributors' ) . ': ' . number_format_i18n( $contribs->rejected, 0 );
 
 			$languageContributions[$row->display_name][$current->english_name] = $contribs;
-
 		}
 
 		// Sort the locale list.
@@ -223,7 +222,7 @@ GROUP BY {$wpdb->users}.user_login, {$gp_table_prefix}translation_sets.id" );
 						}
 					}
 
-					$values[$keynumber] = '<a href="' . htmlentities( $links[$display_name], ENT_QUOTES ) . '" target="_blank">' . htmlentities( $display_name, ENT_QUOTES ) . $nice_link . '</a>' . ' (' . $languageContributions[$display_name][$key] . ')';
+					$values[$keynumber] = '<a href="' . htmlentities( $links[$display_name], ENT_QUOTES ) . '" target="_blank">' . htmlentities( $display_name, ENT_QUOTES ) . $nice_link . '</a>' . ' (' . number_format_i18n($languageContributions[$display_name][$key]->current, 0) . ')';
 				} else {
 					$values[$keynumber] = htmlentities( $display_name, ENT_QUOTES ) . ' <span title="' . htmlentities( $languageContributions[$display_name][$key]->tooltip ) .'">(' . number_format_i18n($languageContributions[$display_name][$key]->current, 0) . ')</span>';
 				}
